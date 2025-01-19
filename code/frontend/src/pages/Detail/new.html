@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex h-full min-h-[700px] flex-col justify-between bg-[#FFFFFF] p-4">
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/c6f349e0-fbfb-45f8-a4e1-25df5204718c.png");'
+                  ></div>
+                  <div class="flex flex-col">
+                    <h1 class="text-black text-base font-medium leading-normal">Open Art</h1>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">130 credits</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#EEEEEE]"><p class="text-black text-sm font-medium leading-normal">Dashboard</p></div>
+                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-black text-sm font-medium leading-normal">Generate</p></div>
+                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-black text-sm font-medium leading-normal">History</p></div>
+                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-black text-sm font-medium leading-normal">Likes</p></div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex items-center gap-3 px-3 py-2"><p class="text-black text-sm font-medium leading-normal">Settings</p></div>
+                <div class="flex items-center gap-3 px-3 py-2"><p class="text-black text-sm font-medium leading-normal">Help</p></div>
+                <div class="flex items-center gap-3 px-3 py-2"><p class="text-black text-sm font-medium leading-normal">Feedback</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-black tracking-light text-[32px] font-bold leading-tight min-w-72">Dashboard</p></div>
+            <h3 class="text-black text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Recently generated images</h3>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/7284c833-451e-41d2-844a-abd7111779f8.png");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/b0c61d37-e31d-4c40-8947-02840d892806.png");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e1cc3bfe-ae0b-4ded-b621-4cec55bb9c54.png");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/1543c191-59b9-4feb-8959-e8f973c61cba.png");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/dcf26381-a815-4bd0-987a-9c079ee5b3be.png");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-black text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">New Image Generation</h3>
+            <div class="flex items-center px-4 py-3 gap-3 @container">
+              <label class="flex flex-col min-w-40 h-full flex-1">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div class="flex flex-1 flex-col">
+                    <textarea
+                      placeholder="Tell us what to generate..."
+                      class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-black focus:outline-0 focus:ring-0 border border-[#DEDEDE] bg-[#FFFFFF] focus:border-[#DEDEDE] h-auto placeholder:text-[#C4C4C4] rounded-b-none border-b-0 text-base font-normal leading-normal"
+                    ></textarea>
+                    <div class="flex border border-[#DEDEDE] bg-[#FFFFFF] justify-end pr-[15px] rounded-br-xl border-l-0 border-t-0 px-[15px] pb-[15px]">
+                      <div class="flex items-center gap-4 justify-end">
+                        <div class="flex items-center gap-1">
+                          <button class="flex items-center justify-center p-1.5">
+                            <div class="text-[#6B6B6B]" data-icon="Lightbulb" data-size="20px" data-weight="regular">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                <path
+                                  d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Zm-16.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                        <button
+                          class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-black text-[#FFFFFF] text-sm font-medium leading-normal hidden @[480px]:block"
+                        >
+                          <span class="truncate">Generate</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <h3 class="text-black text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Usage</h3>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#DEDEDE]">
+                <p class="text-black text-base font-medium leading-normal">Images generated</p>
+                <p class="text-black tracking-light text-2xl font-bold leading-tight">205</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-[#DEDEDE]">
+                <p class="text-black text-base font-medium leading-normal">Most popular prompts</p>
+                <p class="text-black tracking-light text-2xl font-bold leading-tight">cat, dog, landscape, abstract, flowers</p>
+              </div>
+            </div>
+            <h3 class="text-black text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Account</h3>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Upgrade plan</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Invite friends</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">API keys</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Change plan</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Payment method</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Billing history</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Redeem coupon</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-14 justify-between">
+              <p class="text-black text-base font-normal leading-normal flex-1 truncate">Use credits</p>
+              <div class="shrink-0">
+                <div class="text-black flex size-7 items-center justify-center" data-icon="CaretRight" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

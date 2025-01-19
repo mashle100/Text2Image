@@ -1,0 +1,159 @@
+.modern-btn {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 100%);
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.modern-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, rgb(0,0, 0) 100%);
+}
+.dashboard-row { display: flex; justify-content: space-between; align-items: center; padding: 10px; gap:10px } 
+.dashboard-container { display: flex; flex-direction: column; height: 100vh; }
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Arial", sans-serif;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.generated-image {
+  width: 450px;
+  height: 450px;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.placeholder-text {
+  color: #888;
+  font-size: 16px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  opacity: 0.6;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  animation-delay: -1s;
+}
+
+.progress-container {
+  text-align: center;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.chat-input:focus {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.generate-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+} 
